@@ -1,20 +1,15 @@
-//get input from user as a number
 let n = parseInt(prompt("How high do you want to count?"));
 if (typeof n !== "number") {
-    alert("Must input number");
-}
+    alert("Must input number");}
 else {
-    for (let i = 0; i <= n; i++) {
-        if (i % 3 === 0) {
-            document.write("Fizz ");
-        }
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log('FizzBuzz');}
+        else if (i % 3 === 0) {
+            console.log("Fizz ");}
         else if (i % 5 === 0) {
-            document.write("Buzz ");
-        }
+            console.log("Buzz "); }
         else {
-            document.write(i);
-            document.write(" ");
-        }
+            console.log(i); }
     }
 }
-//iterated through all numbers until the inputted number print each number up to that input
